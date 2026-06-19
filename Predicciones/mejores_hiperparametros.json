@@ -1,0 +1,38 @@
+{
+  "N_ITER_REG": 300,
+  "N_ITER_1X2": 500,
+  "DECAY_RECENCIA": 0.0005,
+  "T_OPTIMA_CALCULADA": 1.0,
+  "Goles_L": {
+    "subsample": 0.8,
+    "reg_lambda": 1.0,
+    "n_estimators": 500,
+    "max_depth": 2,
+    "learning_rate": 0.005,
+    "gamma": 0,
+    "colsample_bytree": 1.0
+  },
+  "Goles_V": {
+    "subsample": 0.8,
+    "reg_lambda": 1.0,
+    "n_estimators": 300,
+    "max_depth": 2,
+    "learning_rate": 0.01,
+    "gamma": 0,
+    "colsample_bytree": 0.9
+  },
+  "1X2": {
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "n_estimators": 300,
+    "min_child_weight": 5,
+    "max_depth": 3,
+    "learning_rate": 0.01,
+    "gamma": 0.1,
+    "colsample_bytree": 0.7
+  },
+  "score_GL": -1.2395732169686213,
+  "score_GV": -1.1708919277230645,
+  "score_1X2": -0.889145975389766
+}
