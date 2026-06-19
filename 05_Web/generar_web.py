@@ -70,7 +70,7 @@ def construir_datos():
         s = p1 + px + p2
         p1, px, p2 = p1 / s, px / s, p2 / s
         res = ['1', 'X', '2'][int(max(range(3), key=[p1, px, p2].__getitem__))]
-        gl, gv = pm.marcador_mas_probable(r['xG_Modelo_Local'], r['xG_Modelo_Visitante'], res)
+        gl, gv = pm.marcador_mas_probable(r['xG_Modelo_Local'], r['xG_Modelo_Visitante'], p1, px, p2, res)
 
         # Córners y tarjetas: promedio de la estimación reciente (últimos 5) e histórica
         lam_cor = (stats.loc[a, 'avg_Córneres_5'] + stats.loc[b, 'avg_Córneres_5'] +
