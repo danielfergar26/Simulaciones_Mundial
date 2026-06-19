@@ -22,7 +22,7 @@ jobs:
           python-version: '3.12'
 
       - name: Instalar dependencias
-        run: pip install pandas numpy xgboost scikit-learn joblib tqdm matplotlib
+        run: pip install pandas numpy xgboost scikit-learn joblib tqdm matplotlib seaborn
 
       - name: Cache de modelos entrenados (evita reentrenar si no cambian los datos)
         uses: actions/cache@v4
